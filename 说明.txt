@@ -1,0 +1,2 @@
+此目录为  https://github.com/plutext/AndroidDocxToHtml 的android studio可编译运行版本。
+但是合并到文件管理时，产生jvm内存溢出的问题。

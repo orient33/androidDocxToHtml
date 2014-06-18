@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ae-docx4j-2.8.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/ae-docx4j-2.8.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

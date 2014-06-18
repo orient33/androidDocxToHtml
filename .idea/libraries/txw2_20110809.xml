@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="txw2-20110809">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/txw2-20110809.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

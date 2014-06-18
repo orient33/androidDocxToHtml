@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="avalon-framework-api-4.3.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/avalon-framework-api-4.3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

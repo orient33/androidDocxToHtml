@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ae-xmlgraphics-commons">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/ae-xmlgraphics-commons.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

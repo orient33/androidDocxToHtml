@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4" by="lint 22.6.3">
+
+    <issue
+        id="DefaultLocale"
+        severity="Warning"
+        message="Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead"
+        category="Correctness"
+        priority="6"
+        summary="Finds calls to locale-ambiguous `String` manipulation methods"
+        explanation="Calling `String#toLowerCase()` or `#toUpperCase()` *without specifying an explicit locale* is a common source of bugs. The reason for that is that those methods will use the current locale on the user&apos;s device, and even though the code appears to work correctly when you are developing the app, it will fail in some locales. For example, in the Turkish locale, the uppercase replacement for `i` is *not* `I`.
+
+If you want the methods to just perform ASCII replacement, for example to convert an enum name, call `String#toUpperCase(Locale.US)` instead. If you really want to use the current locale, call `String#toUpperCase(Locale.getDefault())` instead."
+        url="http://developer.android.com/reference/java/util/Locale.html#default_locale"
+        urls="http://developer.android.com/reference/java/util/Locale.html#default_locale"
+        errorLine1="            return arg.toLowerCase();"
+        errorLine2="                       ~~~~~~~~~~~">
+        <location
+            file="/Users/temp/git/mmm/app/src/main/java/org/plutext/docx/DocxToHtml.java"
+            line="26"
+            column="24"/>
+    </issue>
+
+    <issue
+        id="InvalidPackage"
+        severity="Error"
+        message="Invalid package reference in library; not included in Android: java.awt.color. Referenced from org.apache.harmony.awt.datatransfer.DataProxy."
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in Android"
+        explanation="This check scans through libraries looking for calls to APIs that are not included in Android.
+
+When you create Android projects, the classpath is set up such that you can only access classes in the API packages that are included in Android. However, if you add other projects to your libs/ folder, there is no guarantee that those .jar files were built with an Android specific classpath, and in particular, they could be accessing unsupported APIs such as java.applet.
+
+This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
+        <location
+            file="/Users/temp/git/mmm/app/libs/additionnal.jar"/>
+    </issue>
+
+    <issue
+        id="InvalidPackage"
+        severity="Error"
+        message="Invalid package reference in library; not included in Android: java.awt.datatransfer. Referenced from org.apache.harmony.awt.datatransfer.DTK."
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in Android"
+        explanation="This check scans through libraries looking for calls to APIs that are not included in Android.
+
+When you create Android projects, the classpath is set up such that you can only access classes in the API packages that are included in Android. However, if you add other projects to your libs/ folder, there is no guarantee that those .jar files were built with an Android specific classpath, and in particular, they could be accessing unsupported APIs such as java.applet.
+
+This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
+        <location
+            file="/Users/temp/git/mmm/app/libs/additionnal.jar"/>
+    </issue>
+
+    <issue
+        id="InvalidPackage"
+        severity="Error"
+        message="Invalid package reference in library; not included in Android: java.awt.dnd. Referenced from org.apache.harmony.awt.datatransfer.DragSourceEventProxy."
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in Android"
+        explanation="This check scans through libraries looking for calls to APIs that are not included in Android.
+
+When you create Android projects, the classpath is set up such that you can only access classes in the API packages that are included in Android. However, if you add other projects to your libs/ folder, there is no guarantee that those .jar files were built with an Android specific classpath, and in particular, they could be accessing unsupported APIs such as java.applet.
+
+This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
+        <location
+            file="/Users/temp/git/mmm/app/libs/additionnal.jar"/>
+    </issue>
+
+    <issue
+        id="InvalidPackage"
+        severity="Error"
+        message="Invalid package reference in library; not included in Android: java.awt.dnd.peer. Referenced from org.apache.harmony.awt.datatransfer.DTK."
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in Android"
+        explanation="This check scans through libraries looking for calls to APIs that are not included in Android.
+
+When you create Android projects, the classpath is set up such that you can only access classes in the API packages that are included in Android. However, if you add other projects to your libs/ folder, there is no guarantee that those .jar files were built with an Android specific classpath, and in particular, they could be accessing unsupported APIs such as java.applet.
+
+This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
+        <location
+            file="/Users/temp/git/mmm/app/libs/additionnal.jar"/>
+    </issue>
+
+    <issue
+        id="InvalidPackage"
+        severity="Error"
+        message="Invalid package reference in library; not included in Android: java.awt.image. Referenced from org.apache.harmony.awt.datatransfer.DataProxy."
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in Android"
+        explanation="This check scans through libraries looking for calls to APIs that are not included in Android.
+
+When you create Android projects, the classpath is set up such that you can only access classes in the API packages that are included in Android. However, if you add other projects to your libs/ folder, there is no guarantee that those .jar files were built with an Android specific classpath, and in particular, they could be accessing unsupported APIs such as java.applet.
+
+This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
+        <location
+            file="/Users/temp/git/mmm/app/libs/additionnal.jar"/>
+    </issue>
+
+    <issue
+        id="InvalidPackage"
+        severity="Error"
+        message="Invalid package reference in library; not included in Android: java.applet. Referenced from ae.sun.awt.EmbeddedFrame."
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in Android"
+        explanation="This check scans through libraries looking for calls to APIs that are not included in Android.
+
+When you create Android projects, the classpath is set up such that you can only access classes in the API packages that are included in Android. However, if you add other projects to your libs/ folder, there is no guarantee that those .jar files were built with an Android specific classpath, and in particular, they could be accessing unsupported APIs such as java.applet.
+
+This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
+        <location
+            file="/Users/temp/git/mmm/app/libs/ae-awt.jar"/>
+    </issue>
+
+    <issue
+        id="InvalidPackage"
+        severity="Error"
+        message="Invalid package reference in library; not included in Android: java.rmi. Referenced from ae.java.awt.datatransfer.DataFlavor."
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in Android"
+        explanation="This check scans through libraries looking for calls to APIs that are not included in Android.
+
+When you create Android projects, the classpath is set up such that you can only access classes in the API packages that are included in Android. However, if you add other projects to your libs/ folder, there is no guarantee that those .jar files were built with an Android specific classpath, and in particular, they could be accessing unsupported APIs such as java.applet.
+
+This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
+        <location
+            file="/Users/temp/git/mmm/app/libs/ae-awt.jar"/>
+    </issue>
+
+    <issue
+        id="InvalidPackage"
+        severity="Error"
+        message="Invalid package reference in library; not included in Android: javax.print. Referenced from ae.java.awt.print.PrinterJob."
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in Android"
+        explanation="This check scans through libraries looking for calls to APIs that are not included in Android.
+
+When you create Android projects, the classpath is set up such that you can only access classes in the API packages that are included in Android. However, if you add other projects to your libs/ folder, there is no guarantee that those .jar files were built with an Android specific classpath, and in particular, they could be accessing unsupported APIs such as java.applet.
+
+This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
+        <location
+            file="/Users/temp/git/mmm/app/libs/ae-awt.jar"/>
+    </issue>
+
+    <issue
+        id="InvalidPackage"
+        severity="Error"
+        message="Invalid package reference in library; not included in Android: javax.print.attribute. Referenced from ae.java.awt.print.PrinterJob."
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in Android"
+        explanation="This check scans through libraries looking for calls to APIs that are not included in Android.
+
+When you create Android projects, the classpath is set up such that you can only access classes in the API packages that are included in Android. However, if you add other projects to your libs/ folder, there is no guarantee that those .jar files were built with an Android specific classpath, and in particular, they could be accessing unsupported APIs such as java.applet.
+
+This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
+        <location
+            file="/Users/temp/git/mmm/app/libs/ae-awt.jar"/>
+    </issue>
+
+    <issue
+        id="InvalidPackage"
+        severity="Error"
+        message="Invalid package reference in library; not included in Android: javax.print.attribute.standard. Referenced from ae.java.awt.print.PrinterJob."
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in Android"
+        explanation="This check scans through libraries looking for calls to APIs that are not included in Android.
+
+When you create Android projects, the classpath is set up such that you can only access classes in the API packages that are included in Android. However, if you add other projects to your libs/ folder, there is no guarantee that those .jar files were built with an Android specific classpath, and in particular, they could be accessing unsupported APIs such as java.applet.
+
+This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
+        <location
+            file="/Users/temp/git/mmm/app/libs/ae-awt.jar"/>
+    </issue>
+
+    <issue
+        id="InvalidPackage"
+        severity="Error"
+        message="Invalid package reference in library; not included in Android: javax.swing. Referenced from ae.sun.awt.shell.ShellFolderColumnInfo."
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in Android"
+        explanation="This check scans through libraries looking for calls to APIs that are not included in Android.
+
+When you create Android projects, the classpath is set up such that you can only access classes in the API packages that are included in Android. However, if you add other projects to your libs/ folder, there is no guarantee that those .jar files were built with an Android specific classpath, and in particular, they could be accessing unsupported APIs such as java.applet.
+
+This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
+        <location
+            file="/Users/temp/git/mmm/app/libs/ae-awt.jar"/>
+    </issue>
+
+    <issue
+        id="InvalidPackage"
+        severity="Error"
+        message="Invalid package reference in library; not included in Android: javax.swing.text. Referenced from ae.java.awt.TextComponent.AccessibleAWTTextComponent."
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in Android"
+        explanation="This check scans through libraries looking for calls to APIs that are not included in Android.
+
+When you create Android projects, the classpath is set up such that you can only access classes in the API packages that are included in Android. However, if you add other projects to your libs/ folder, there is no guarantee that those .jar files were built with an Android specific classpath, and in particular, they could be accessing unsupported APIs such as java.applet.
+
+This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
+        <location
+            file="/Users/temp/git/mmm/app/libs/ae-awt.jar"/>
+    </issue>
+
+    <issue
+        id="InvalidPackage"
+        severity="Error"
+        message="Invalid package reference in library; not included in Android: java.awt.geom. Referenced from org.docx4j.fonts.fop.fonts.type1.AFMCharMetrics."
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in Android"
+        explanation="This check scans through libraries looking for calls to APIs that are not included in Android.
+
+When you create Android projects, the classpath is set up such that you can only access classes in the API packages that are included in Android. However, if you add other projects to your libs/ folder, there is no guarantee that those .jar files were built with an Android specific classpath, and in particular, they could be accessing unsupported APIs such as java.applet.
+
+This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
+        <location
+            file="/Users/temp/git/mmm/app/libs/ae-docx4j-2.8.0-SNAPSHOT.jar"/>
+    </issue>
+
+    <issue
+        id="InvalidPackage"
+        severity="Error"
+        message="Invalid package reference in library; not included in Android: javax.xml.stream. Referenced from com.sun.istack.XMLStreamException2."
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in Android"
+        explanation="This check scans through libraries looking for calls to APIs that are not included in Android.
+
+When you create Android projects, the classpath is set up such that you can only access classes in the API packages that are included in Android. However, if you add other projects to your libs/ folder, there is no guarantee that those .jar files were built with an Android specific classpath, and in particular, they could be accessing unsupported APIs such as java.applet.
+
+This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
+        <location
+            file="/Users/temp/git/mmm/app/libs/istack-commons-runtime.jar"/>
+    </issue>
+
+    <issue
+        id="InvalidPackage"
+        severity="Error"
+        message="Invalid package reference in library; not included in Android: javax.jms. Referenced from org.apache.log4j.net.JMSAppender."
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in Android"
+        explanation="This check scans through libraries looking for calls to APIs that are not included in Android.
+
+When you create Android projects, the classpath is set up such that you can only access classes in the API packages that are included in Android. However, if you add other projects to your libs/ folder, there is no guarantee that those .jar files were built with an Android specific classpath, and in particular, they could be accessing unsupported APIs such as java.applet.
+
+This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
+        <location
+            file="/Users/temp/git/mmm/app/libs/log4j-1.2.15.jar"/>
+    </issue>
+
+    <issue
+        id="InvalidPackage"
+        severity="Error"
+        message="Invalid package reference in library; not included in Android: javax.mail. Referenced from org.apache.log4j.net.SMTPAppender."
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in Android"
+        explanation="This check scans through libraries looking for calls to APIs that are not included in Android.
+
+When you create Android projects, the classpath is set up such that you can only access classes in the API packages that are included in Android. However, if you add other projects to your libs/ folder, there is no guarantee that those .jar files were built with an Android specific classpath, and in particular, they could be accessing unsupported APIs such as java.applet.
+
+This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
+        <location
+            file="/Users/temp/git/mmm/app/libs/log4j-1.2.15.jar"/>
+    </issue>
+
+    <issue
+        id="InvalidPackage"
+        severity="Error"
+        message="Invalid package reference in library; not included in Android: javax.mail.internet. Referenced from org.apache.log4j.net.SMTPAppender."
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in Android"
+        explanation="This check scans through libraries looking for calls to APIs that are not included in Android.
+
+When you create Android projects, the classpath is set up such that you can only access classes in the API packages that are included in Android. However, if you add other projects to your libs/ folder, there is no guarantee that those .jar files were built with an Android specific classpath, and in particular, they could be accessing unsupported APIs such as java.applet.
+
+This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
+        <location
+            file="/Users/temp/git/mmm/app/libs/log4j-1.2.15.jar"/>
+    </issue>
+
+    <issue
+        id="InvalidPackage"
+        severity="Error"
+        message="Invalid package reference in library; not included in Android: javax.management. Referenced from org.apache.log4j.jmx.AbstractDynamicMBean."
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in Android"
+        explanation="This check scans through libraries looking for calls to APIs that are not included in Android.
+
+When you create Android projects, the classpath is set up such that you can only access classes in the API packages that are included in Android. However, if you add other projects to your libs/ folder, there is no guarantee that those .jar files were built with an Android specific classpath, and in particular, they could be accessing unsupported APIs such as java.applet.
+
+This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
+        <location
+            file="/Users/temp/git/mmm/app/libs/log4j-1.2.15.jar"/>
+    </issue>
+
+    <issue
+        id="InvalidPackage"
+        severity="Error"
+        message="Invalid package reference in library; not included in Android: javax.naming. Referenced from org.apache.log4j.net.JMSAppender."
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in Android"
+        explanation="This check scans through libraries looking for calls to APIs that are not included in Android.
+
+When you create Android projects, the classpath is set up such that you can only access classes in the API packages that are included in Android. However, if you add other projects to your libs/ folder, there is no guarantee that those .jar files were built with an Android specific classpath, and in particular, they could be accessing unsupported APIs such as java.applet.
+
+This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
+        <location
+            file="/Users/temp/git/mmm/app/libs/log4j-1.2.15.jar"/>
+    </issue>
+
+    <issue
+        id="InvalidPackage"
+        severity="Error"
+        message="Invalid package reference in library; not included in Android: javax.swing.event. Referenced from org.apache.log4j.chainsaw.DetailPanel."
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in Android"
+        explanation="This check scans through libraries looking for calls to APIs that are not included in Android.
+
+When you create Android projects, the classpath is set up such that you can only access classes in the API packages that are included in Android. However, if you add other projects to your libs/ folder, there is no guarantee that those .jar files were built with an Android specific classpath, and in particular, they could be accessing unsupported APIs such as java.applet.
+
+This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
+        <location
+            file="/Users/temp/git/mmm/app/libs/log4j-1.2.15.jar"/>
+    </issue>
+
+    <issue
+        id="InvalidPackage"
+        severity="Error"
+        message="Invalid package reference in library; not included in Android: javax.swing.table. Referenced from org.apache.log4j.chainsaw.ControlPanel."
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in Android"
+        explanation="This check scans through libraries looking for calls to APIs that are not included in Android.
+
+When you create Android projects, the classpath is set up such that you can only access classes in the API packages that are included in Android. However, if you add other projects to your libs/ folder, there is no guarantee that those .jar files were built with an Android specific classpath, and in particular, they could be accessing unsupported APIs such as java.applet.
+
+This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
+        <location
+            file="/Users/temp/git/mmm/app/libs/log4j-1.2.15.jar"/>
+    </issue>
+
+    <issue
+        id="InvalidPackage"
+        severity="Error"
+        message="Invalid package reference in library; not included in Android: javax.swing.tree. Referenced from org.apache.log4j.lf5.viewer.LogBrokerMonitor."
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in Android"
+        explanation="This check scans through libraries looking for calls to APIs that are not included in Android.
+
+When you create Android projects, the classpath is set up such that you can only access classes in the API packages that are included in Android. However, if you add other projects to your libs/ folder, there is no guarantee that those .jar files were built with an Android specific classpath, and in particular, they could be accessing unsupported APIs such as java.applet.
+
+This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
+        <location
+            file="/Users/temp/git/mmm/app/libs/log4j-1.2.15.jar"/>
+    </issue>
+
+    <issue
+        id="InvalidPackage"
+        severity="Error"
+        message="Invalid package reference in library; not included in Android: java.awt. Referenced from org.antlr.stringtemplate.misc.JTreeStringTemplatePanel."
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in Android"
+        explanation="This check scans through libraries looking for calls to APIs that are not included in Android.
+
+When you create Android projects, the classpath is set up such that you can only access classes in the API packages that are included in Android. However, if you add other projects to your libs/ folder, there is no guarantee that those .jar files were built with an Android specific classpath, and in particular, they could be accessing unsupported APIs such as java.applet.
+
+This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
+        <location
+            file="/Users/temp/git/mmm/app/libs/stringtemplate-3.2.1.jar"/>
+    </issue>
+
+    <issue
+        id="InvalidPackage"
+        severity="Error"
+        message="Invalid package reference in library; not included in Android: java.awt.event. Referenced from org.antlr.stringtemplate.misc.StringTemplateTreeView.1."
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in Android"
+        explanation="This check scans through libraries looking for calls to APIs that are not included in Android.
+
+When you create Android projects, the classpath is set up such that you can only access classes in the API packages that are included in Android. However, if you add other projects to your libs/ folder, there is no guarantee that those .jar files were built with an Android specific classpath, and in particular, they could be accessing unsupported APIs such as java.applet.
+
+This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
+        <location
+            file="/Users/temp/git/mmm/app/libs/stringtemplate-3.2.1.jar"/>
+    </issue>
+
+    <issue
+        id="SdCardPath"
+        severity="Warning"
+        message="Do not hardcode &quot;/sdcard/&quot;; use Environment.getExternalStorageDirectory().getPath() instead"
+        category="Correctness"
+        priority="6"
+        summary="Looks for hardcoded references to `/sdcard`"
+        explanation="Your code should not reference the `/sdcard` path directly; instead use `Environment.getExternalStorageDirectory().getPath()`.
+
+Similarly, do not reference the `/data/data/` path directly; it can vary in multi-user scenarios. Instead, use `Context.getFilesDir().getPath()`."
+        url="http://developer.android.com/guide/topics/data/data-storage.html#filesExternal"
+        urls="http://developer.android.com/guide/topics/data/data-storage.html#filesExternal"
+        errorLine1="            path = &quot;/sdcard/docx_src.docx&quot;;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/temp/git/mmm/app/src/main/java/com/singuloid/docx2html/DocxShow.java"
+            line="34"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleOverrides"
+        severity="Warning"
+        message="This minSdkVersion value (15) is not used; it is always overridden by the value specified in the Gradle build script (14)"
+        category="Correctness"
+        priority="4"
+        summary="Looks for values specified in the manifest file which are overridden by values in Gradle"
+        explanation="The value of (for example) `minSdkVersion` is only used if it is not specified in the `build.gradle` build scripts. When specified in the Gradle build scripts, the manifest value is ignored and can be misleading, so should be removed to avoid ambiguity."
+        errorLine1="    &lt;uses-sdk android:minSdkVersion=&quot;15&quot; />"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/temp/git/mmm/app/src/main/AndroidManifest.xml"
+            line="7"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="AllowBackup"
+        severity="Warning"
+        message="Should explicitly set android:allowBackup to true or false (it&apos;s true by default, and that can have some security implications for the application&apos;s data)"
+        category="Security"
+        priority="3"
+        summary="Ensure that allowBackup is explicitly set in the application&apos;s manifest"
+        explanation="The allowBackup attribute determines if an application&apos;s data can be backed up and restored. It is documented at http://developer.android.com/reference/android/R.attr.html#allowBackup
+
+By default, this flag is set to `true`. When this flag is set to `true`, application data can be backed up and restored by the user using `adb backup` and `adb restore`.
+
+This may have security consequences for an application. `adb backup` allows users who have enabled USB debugging to copy application data off of the device. Once backed up, all application data can be read by the user. `adb restore` allows creation of application data from a source specified by the user. Following a restore, applications should not assume that the data, file permissions, and directory permissions were created by the application itself.
+
+Setting `allowBackup=&quot;false&quot;` opts an application out of both backup and restore.
+
+To fix this warning, decide whether your application should support backup, and explicitly set `android:allowBackup=(true|false)&quot;`"
+        url="http://developer.android.com/reference/android/R.attr.html#allowBackup"
+        urls="http://developer.android.com/reference/android/R.attr.html#allowBackup"
+        errorLine1="    &lt;application"
+        errorLine2="    ^"
+        quickfix="adt">
+        <location
+            file="/Users/temp/git/mmm/app/src/main/AndroidManifest.xml"
+            line="9"
+            column="5"/>
+    </issue>
+
+</issues>

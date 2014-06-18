@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="w3c-css">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/w3c-css.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

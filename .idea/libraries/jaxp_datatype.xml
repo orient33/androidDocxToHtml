@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jaxp-datatype">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/jaxp-datatype.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -2,10 +2,10 @@
 <merger version="2" >
 
     <dataSet config="main" >
-        <source path="/Users/temp/git/mmm/app/src/main/assets" />
+        <source path="/Users/temp/git/myDocx2html/app/src/main/assets" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="/Users/temp/git/mmm/app/src/debug/assets" />
+        <source path="/Users/temp/git/myDocx2html/app/src/debug/assets" />
     </dataSet>
 
 </merger>

@@ -2,49 +2,44 @@
 <merger version="2" >
 
     <dataSet config="main" >
-        <source path="/Users/temp/git/mmm/app/src/main/res" >
+        <source path="/Users/temp/git/myDocx2html/app/src/main/res" >
             <file
                 name="ic_launcher"
-                path="/Users/temp/git/mmm/app/src/main/res/drawable-hdpi/ic_launcher.png"
+                path="/Users/temp/git/myDocx2html/app/src/main/res/drawable-hdpi/ic_launcher.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="/Users/temp/git/mmm/app/src/main/res/drawable-ldpi/ic_launcher.png"
+                path="/Users/temp/git/myDocx2html/app/src/main/res/drawable-ldpi/ic_launcher.png"
                 qualifiers="ldpi-v4"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="/Users/temp/git/mmm/app/src/main/res/drawable-mdpi/ic_launcher.png"
+                path="/Users/temp/git/myDocx2html/app/src/main/res/drawable-mdpi/ic_launcher.png"
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="/Users/temp/git/mmm/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+                path="/Users/temp/git/myDocx2html/app/src/main/res/drawable-xhdpi/ic_launcher.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="main"
-                path="/Users/temp/git/mmm/app/src/main/res/layout/main.xml"
+                path="/Users/temp/git/myDocx2html/app/src/main/res/layout/main.xml"
                 qualifiers=""
                 type="layout" />
             <file
-                name="sample"
-                path="/Users/temp/git/mmm/app/src/main/res/raw/sample.docx"
-                qualifiers=""
-                type="raw" />
-            <file
-                path="/Users/temp/git/mmm/app/src/main/res/values/strings.xml"
+                path="/Users/temp/git/myDocx2html/app/src/main/res/values/strings.xml"
                 qualifiers="" >
                 <string name="app_name" >DocxReader
                 </string>
             </file>
         </source>
-        <source path="/Users/temp/git/mmm/app/build/generated/res/rs/debug" />
-        <source path="/Users/temp/git/mmm/app/build/generated/res/generated/debug" />
+        <source path="/Users/temp/git/myDocx2html/app/build/generated/res/rs/debug" />
+        <source path="/Users/temp/git/myDocx2html/app/build/generated/res/generated/debug" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="/Users/temp/git/mmm/app/src/debug/res" />
+        <source path="/Users/temp/git/myDocx2html/app/src/debug/res" />
     </dataSet>
 
 </merger>

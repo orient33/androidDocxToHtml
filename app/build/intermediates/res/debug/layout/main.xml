@@ -1,40 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@android:id/tabhost"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
 
-    <LinearLayout
+    <WebView
+        android:id="@+id/webpage"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical" >
+        android:layout_height="fill_parent" />
 
-        <TabWidget
-            android:id="@android:id/tabs"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:visibility="gone"/>
+</LinearLayout>
 
-        <FrameLayout
-            android:id="@android:id/tabcontent"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent" >
-
-            <WebView
-                android:id="@+id/webpage"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent" />
-            
-            <!--<TextView-->
-                <!--android:id="@+id/sourceview"-->
-                <!--android:layout_width="fill_parent"-->
-                <!--android:layout_height="fill_parent"-->
-                <!--android:text="this is a tab"-->
-                <!--android:scrollbars = "vertical"  />-->
-
-
-        </FrameLayout>
-    </LinearLayout>
-
-</TabHost>
-<!-- From: file:/Users/temp/git/mmm/app/src/main/res/layout/main.xml -->
+<!-- From: file:/Users/temp/git/myDocx2html/app/src/main/res/layout/main.xml -->

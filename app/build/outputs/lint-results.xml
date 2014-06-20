@@ -16,7 +16,7 @@ If you want the methods to just perform ASCII replacement, for example to conver
         errorLine1="            return arg.toLowerCase();"
         errorLine2="                       ~~~~~~~~~~~">
         <location
-            file="/Users/temp/git/mmm/app/src/main/java/org/plutext/docx/DocxToHtml.java"
+            file="/Users/temp/git/myDocx2html/app/src/main/java/org/plutext/docx/DocxToHtml.java"
             line="26"
             column="24"/>
     </issue>
@@ -34,7 +34,7 @@ When you create Android projects, the classpath is set up such that you can only
 
 This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
         <location
-            file="/Users/temp/git/mmm/app/libs/additionnal.jar"/>
+            file="/Users/temp/git/myDocx2html/app/libs/additionnal.jar"/>
     </issue>
 
     <issue
@@ -50,7 +50,7 @@ When you create Android projects, the classpath is set up such that you can only
 
 This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
         <location
-            file="/Users/temp/git/mmm/app/libs/additionnal.jar"/>
+            file="/Users/temp/git/myDocx2html/app/libs/additionnal.jar"/>
     </issue>
 
     <issue
@@ -66,7 +66,7 @@ When you create Android projects, the classpath is set up such that you can only
 
 This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
         <location
-            file="/Users/temp/git/mmm/app/libs/additionnal.jar"/>
+            file="/Users/temp/git/myDocx2html/app/libs/additionnal.jar"/>
     </issue>
 
     <issue
@@ -82,7 +82,7 @@ When you create Android projects, the classpath is set up such that you can only
 
 This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
         <location
-            file="/Users/temp/git/mmm/app/libs/additionnal.jar"/>
+            file="/Users/temp/git/myDocx2html/app/libs/additionnal.jar"/>
     </issue>
 
     <issue
@@ -98,7 +98,7 @@ When you create Android projects, the classpath is set up such that you can only
 
 This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
         <location
-            file="/Users/temp/git/mmm/app/libs/additionnal.jar"/>
+            file="/Users/temp/git/myDocx2html/app/libs/additionnal.jar"/>
     </issue>
 
     <issue
@@ -114,7 +114,7 @@ When you create Android projects, the classpath is set up such that you can only
 
 This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
         <location
-            file="/Users/temp/git/mmm/app/libs/ae-awt.jar"/>
+            file="/Users/temp/git/myDocx2html/app/libs/ae-awt.jar"/>
     </issue>
 
     <issue
@@ -130,7 +130,7 @@ When you create Android projects, the classpath is set up such that you can only
 
 This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
         <location
-            file="/Users/temp/git/mmm/app/libs/ae-awt.jar"/>
+            file="/Users/temp/git/myDocx2html/app/libs/ae-awt.jar"/>
     </issue>
 
     <issue
@@ -146,7 +146,7 @@ When you create Android projects, the classpath is set up such that you can only
 
 This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
         <location
-            file="/Users/temp/git/mmm/app/libs/ae-awt.jar"/>
+            file="/Users/temp/git/myDocx2html/app/libs/ae-awt.jar"/>
     </issue>
 
     <issue
@@ -162,7 +162,7 @@ When you create Android projects, the classpath is set up such that you can only
 
 This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
         <location
-            file="/Users/temp/git/mmm/app/libs/ae-awt.jar"/>
+            file="/Users/temp/git/myDocx2html/app/libs/ae-awt.jar"/>
     </issue>
 
     <issue
@@ -178,7 +178,7 @@ When you create Android projects, the classpath is set up such that you can only
 
 This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
         <location
-            file="/Users/temp/git/mmm/app/libs/ae-awt.jar"/>
+            file="/Users/temp/git/myDocx2html/app/libs/ae-awt.jar"/>
     </issue>
 
     <issue
@@ -194,7 +194,7 @@ When you create Android projects, the classpath is set up such that you can only
 
 This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
         <location
-            file="/Users/temp/git/mmm/app/libs/ae-awt.jar"/>
+            file="/Users/temp/git/myDocx2html/app/libs/ae-awt.jar"/>
     </issue>
 
     <issue
@@ -210,7 +210,7 @@ When you create Android projects, the classpath is set up such that you can only
 
 This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
         <location
-            file="/Users/temp/git/mmm/app/libs/ae-awt.jar"/>
+            file="/Users/temp/git/myDocx2html/app/libs/ae-awt.jar"/>
     </issue>
 
     <issue
@@ -226,7 +226,7 @@ When you create Android projects, the classpath is set up such that you can only
 
 This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
         <location
-            file="/Users/temp/git/mmm/app/libs/ae-docx4j-2.8.0-SNAPSHOT.jar"/>
+            file="/Users/temp/git/myDocx2html/app/libs/ae-docx4j-2.8.0-SNAPSHOT.jar"/>
     </issue>
 
     <issue
@@ -242,7 +242,7 @@ When you create Android projects, the classpath is set up such that you can only
 
 This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
         <location
-            file="/Users/temp/git/mmm/app/libs/istack-commons-runtime.jar"/>
+            file="/Users/temp/git/myDocx2html/app/libs/istack-commons-runtime.jar"/>
     </issue>
 
     <issue
@@ -258,7 +258,7 @@ When you create Android projects, the classpath is set up such that you can only
 
 This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
         <location
-            file="/Users/temp/git/mmm/app/libs/log4j-1.2.15.jar"/>
+            file="/Users/temp/git/myDocx2html/app/libs/log4j-1.2.15.jar"/>
     </issue>
 
     <issue
@@ -274,7 +274,7 @@ When you create Android projects, the classpath is set up such that you can only
 
 This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
         <location
-            file="/Users/temp/git/mmm/app/libs/log4j-1.2.15.jar"/>
+            file="/Users/temp/git/myDocx2html/app/libs/log4j-1.2.15.jar"/>
     </issue>
 
     <issue
@@ -290,7 +290,7 @@ When you create Android projects, the classpath is set up such that you can only
 
 This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
         <location
-            file="/Users/temp/git/mmm/app/libs/log4j-1.2.15.jar"/>
+            file="/Users/temp/git/myDocx2html/app/libs/log4j-1.2.15.jar"/>
     </issue>
 
     <issue
@@ -306,7 +306,7 @@ When you create Android projects, the classpath is set up such that you can only
 
 This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
         <location
-            file="/Users/temp/git/mmm/app/libs/log4j-1.2.15.jar"/>
+            file="/Users/temp/git/myDocx2html/app/libs/log4j-1.2.15.jar"/>
     </issue>
 
     <issue
@@ -322,7 +322,7 @@ When you create Android projects, the classpath is set up such that you can only
 
 This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
         <location
-            file="/Users/temp/git/mmm/app/libs/log4j-1.2.15.jar"/>
+            file="/Users/temp/git/myDocx2html/app/libs/log4j-1.2.15.jar"/>
     </issue>
 
     <issue
@@ -338,7 +338,7 @@ When you create Android projects, the classpath is set up such that you can only
 
 This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
         <location
-            file="/Users/temp/git/mmm/app/libs/log4j-1.2.15.jar"/>
+            file="/Users/temp/git/myDocx2html/app/libs/log4j-1.2.15.jar"/>
     </issue>
 
     <issue
@@ -354,7 +354,7 @@ When you create Android projects, the classpath is set up such that you can only
 
 This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
         <location
-            file="/Users/temp/git/mmm/app/libs/log4j-1.2.15.jar"/>
+            file="/Users/temp/git/myDocx2html/app/libs/log4j-1.2.15.jar"/>
     </issue>
 
     <issue
@@ -370,7 +370,7 @@ When you create Android projects, the classpath is set up such that you can only
 
 This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
         <location
-            file="/Users/temp/git/mmm/app/libs/log4j-1.2.15.jar"/>
+            file="/Users/temp/git/myDocx2html/app/libs/log4j-1.2.15.jar"/>
     </issue>
 
     <issue
@@ -386,7 +386,7 @@ When you create Android projects, the classpath is set up such that you can only
 
 This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
         <location
-            file="/Users/temp/git/mmm/app/libs/stringtemplate-3.2.1.jar"/>
+            file="/Users/temp/git/myDocx2html/app/libs/stringtemplate-3.2.1.jar"/>
     </issue>
 
     <issue
@@ -402,27 +402,7 @@ When you create Android projects, the classpath is set up such that you can only
 
 This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.">
         <location
-            file="/Users/temp/git/mmm/app/libs/stringtemplate-3.2.1.jar"/>
-    </issue>
-
-    <issue
-        id="SdCardPath"
-        severity="Warning"
-        message="Do not hardcode &quot;/sdcard/&quot;; use Environment.getExternalStorageDirectory().getPath() instead"
-        category="Correctness"
-        priority="6"
-        summary="Looks for hardcoded references to `/sdcard`"
-        explanation="Your code should not reference the `/sdcard` path directly; instead use `Environment.getExternalStorageDirectory().getPath()`.
-
-Similarly, do not reference the `/data/data/` path directly; it can vary in multi-user scenarios. Instead, use `Context.getFilesDir().getPath()`."
-        url="http://developer.android.com/guide/topics/data/data-storage.html#filesExternal"
-        urls="http://developer.android.com/guide/topics/data/data-storage.html#filesExternal"
-        errorLine1="            path = &quot;/sdcard/docx_src.docx&quot;;"
-        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/Users/temp/git/mmm/app/src/main/java/com/singuloid/docx2html/DocxShow.java"
-            line="34"
-            column="20"/>
+            file="/Users/temp/git/myDocx2html/app/libs/stringtemplate-3.2.1.jar"/>
     </issue>
 
     <issue
@@ -436,7 +416,7 @@ Similarly, do not reference the `/data/data/` path directly; it can vary in mult
         errorLine1="    &lt;uses-sdk android:minSdkVersion=&quot;15&quot; />"
         errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/temp/git/mmm/app/src/main/AndroidManifest.xml"
+            file="/Users/temp/git/myDocx2html/app/src/main/AndroidManifest.xml"
             line="7"
             column="15"/>
     </issue>
@@ -463,7 +443,7 @@ To fix this warning, decide whether your application should support backup, and 
         errorLine2="    ^"
         quickfix="adt">
         <location
-            file="/Users/temp/git/mmm/app/src/main/AndroidManifest.xml"
+            file="/Users/temp/git/myDocx2html/app/src/main/AndroidManifest.xml"
             line="9"
             column="5"/>
     </issue>

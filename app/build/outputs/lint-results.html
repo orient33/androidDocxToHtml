@@ -18,8 +18,8 @@ document.getElementById(id+'Link').style.display = 'none';
 <body>
 <h1>Lint Report</h1>
 <div class="titleSeparator"></div>
-Check performed at Wed Jun 18 16:23:14 CST 2014.<br/>
-24 errors and 4 warnings found:<br/><br/>
+Check performed at Fri Jun 20 18:57:12 CST 2014.<br/>
+24 errors and 3 warnings found:<br/><br/>
 <table class="overview">
 <tr><td></td><td class="categoryColumn"><a href="#Correctness">Correctness</a>
 </td></tr>
@@ -30,10 +30,6 @@ Check performed at Wed Jun 18 16:23:14 CST 2014.<br/>
 <tr>
 <td class="countColumn">24</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-error.png" alt="Error" />
 <a href="#InvalidPackage">InvalidPackage: Package not included in Android</a>
-</td></tr>
-<tr>
-<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
-<a href="#SdCardPath">SdCardPath: Hardcoded reference to <code>/sdcard</code></a>
 </td></tr>
 <tr>
 <td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
@@ -122,32 +118,6 @@ When you create Android projects, the classpath is set up such that you can only
 This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.
 </div>
 <br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "InvalidPackage" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
-</div>
-<a name="SdCardPath"></a>
-<div class="issue">
-<div class="id"><a href="#" title="Return to top">SdCardPath: Hardcoded reference to <code>/sdcard</code></a><div class="issueSeparator"></div>
-</div>
-<div class="warningslist">
-<span class="location"><a href="../../src/main/java/com/singuloid/docx2html/DocxShow.java">../../src/main/java/com/singuloid/docx2html/DocxShow.java</a>:34</span>: <span class="message">Do not hardcode "/sdcard/"; use Environment.getExternalStorageDirectory().getPath() instead</span><br /><pre class="errorlines">
-<span class="lineno">  31</span>         } else {
-<span class="lineno">  32</span>             setTitle("sample.docx");
-<span class="lineno">  33</span>             Log.e(TAG, "path is null. use R.raw.sample  Resource!!");
-<span class="lineno">  34</span>             path = <span class="errorspan">"/sdcard/docx_src.docx";</span>
-<span class="lineno">  35</span>         }
-<span class="lineno">  36</span>         Log.d("FE", TAG + "] + onCreate() path=" + path);
-</pre>
-</div>
-<div class="metadata">Priority: 6 / 10<br/>
-Category: Correctness</div>
-Severity: <span class="warning">Warning</span><div class="summary">
-Explanation: Looks for hardcoded references to <code>/sdcard</code></div>
-<div class="explanation">
-Your code should not reference the <code>/sdcard</code> path directly; instead use <code>Environment.getExternalStorageDirectory().getPath()</code>.<br/>
-<br/>
-Similarly, do not reference the <code>/data/data/</code> path directly; it can vary in multi-user scenarios. Instead, use <code>Context.getFilesDir().getPath()</code>.
-</div>
-<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/topics/data/data-storage.html#filesExternal">http://developer.android.com/guide/topics/data/data-storage.html#filesExternal</a>
-</div><br/>To suppress this error, use the issue id "SdCardPath" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
 </div>
 <a name="GradleOverrides"></a>
 <div class="issue">
